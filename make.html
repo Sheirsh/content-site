@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>make</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'your-app-id',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="wrap">
+	<div id="header">			
+		<!-- page header - use <span></span> to colour text grey, default color blue -->
+		<h1><a href="#">Into<span>Tech</span></a></h1>
+		
+		<div class="clear"></div>
+	</div>
+
+	<div id="navigation">
+		<div class="inner-navigation">
+			<ul>
+				<!-- top navigation use selected class for selected item -->
+				<li><a href="index.html">home</a></li>
+				<li class="selected"><a href="linux.html">linux</a></li>
+				<li><a href="software.html">software</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div id="content1">
+		<!-- left hand main content -->
+		<div id="page">
+			
+			<h2>make<small> - GNU make utility to maintain groups of programs</small></h2>
+			<p>The  make  utility will determine automatically which pieces of a large
+       program need to be recompiled, and  issue  the  commands  to  recompile
+       them.   The  manual describes the GNU implementation of make, which was
+       written by Richard Stallman and Roland McGrath, and is currently  maintained  by  Paul  Smith.   Our examples show C programs, since they are
+       very common, but you can use make with any programming  language  whose
+       compiler can be run with a shell command.  In fact, make is not limited
+       to programs.  You can use it to describe any task where some files must
+       be updated automatically from others whenever the others change.</p>
+       
+			<p>To  prepare to use make, you must write a file called the makefile that
+       describes the relationships among files in your program, and the states
+       the  commands for updating each file.  In a program, typically the executable file is updated from object files, which are in  turn  made  by
+       compiling source files.</p>
+			
+			<p>Once  a  suitable  makefile  exists,  each  time you change some source
+       files, this simple shell command:</p>
+       <p><center><b>make</b></center></p>
+       <p>suffices to perform all necessary  recompilations.   The  make  program
+       uses  the  makefile  description and the last-modification times of the
+       files to decide which of the files need to be  updated.   For  each  of
+       those files, it issues the commands recorded in the makefile.</p>
+		
+		<p>make  executes  commands  in  the makefile to update one or more target
+       names, where name is typically a program.  If no -f option is  present,
+       make  will  look for the makefiles GNUmakefile, makefile, and Makefile,
+       in that order.</p>       
+       
+		<p>Normally you should call your makefile  either  makefile  or  Makefile.
+       (We  recommend  Makefile because it appears prominently near the beginning of a directory listing, right near other important files  such  as
+       README.)   The  first name checked, GNUmakefile, is not recommended for
+       most makefiles.  You should use this name if you have a  makefile  that
+       is  specific  to GNU make, and will not be understood by other versions
+       of make.  If makefile is '-', the standard input is read.</p> 
+		
+		<p>make updates a target if it depends on  prerequisite  files  that  have
+       been modified since the target was last modified, or if the target does
+       not exist.</p>       
+		</div>
+		<!-- end left hand main content -->
+		
+		<!-- start sidebar -->		
+		<div id="sidebar">
+		
+			<!-- sidebar h3: use <strong> for black text -->
+			<!--h3>Current <strong>clients</strong></h3>
+			<ul class="clientlist">
+				<li><a href="#"><img src="images/client-logo-example.png" alt="Client #1" /></a></li>
+				<li><a href="#"><img src="images/client-logo-example.png" alt="Client #1" /></a></li>
+				<li><a href="#"><img src="images/client-logo-example.png" alt="Client #1" /></a></li>
+			</ul-->
+			<br class="clear" />
+				
+			<h3>Related <strong>links</strong></h3>
+			<ul>
+			  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+			  <li><a href="#">Quisque consequat nunc a felis.</a></li>
+			  <li><a href="#">Suspendisse consequat magna at.</a></li>
+			  <li><a href="#">Etiam eget diam id ligula rhoncus.</a></li>
+			  <li><a href="#">Sed in mauris non nibh.</a></li>
+			</ul>
+				
+
+		</div>
+		<!-- end sidebar -->
+		
+		<div class="clear"></div>
+				
+	</div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="https://rahul10mail.github.io/make.html" data-numposts="5"></div>
+	<!-- start footer -->
+	<hr />
+	<div class="footer1">
+		<p><center>&copy; 2017.</center></p>
+	</div>
+	
+	<!-- end footer -->
+</div>
+</body>
+</html>

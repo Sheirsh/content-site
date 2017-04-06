@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>man</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'your-app-id',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="wrap">
+	<div id="header">			
+		<!-- page header - use <span></span> to colour text grey, default color blue -->
+		<h1><a href="#">Into<span>Tech</span></a></h1>
+		
+		<div class="clear"></div>
+	</div>
+
+	<div id="navigation">
+		<div class="inner-navigation">
+			<ul>
+				<!-- top navigation use selected class for selected item -->
+				<li><a href="index.html">home</a></li>
+				<li class="selected"><a href="linux.html">linux</a></li>
+				<li><a href="software.html">software</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div id="content1">
+		<!-- left hand main content -->
+		<div id="page">
+			
+			<h2>man<small> - an interface to the on-line reference manuals</small></h2>
+			<p>man is the system's manual pager.  Each page argument given to man is normally the name of a program, utility or function.  The manual page
+       associated  with each of these arguments is then found and displayed.  A section, if provided, will direct man to look only in that section
+       of the manual.  The default action is to search in all of the available sections following a pre-defined order ("1 n l 8  3  2  3posix  3pm
+       3perl  5  4  9  6 7" by default, unless overridden by the SECTION directive in /etc/manpath.config), and to show only the first page found,
+       even if page exists in several sections.</p>
+       
+			<p>The table below shows the section numbers of the manual followed by the types of pages they contain.</p>
+			<ol>
+				<li>Executable programs or shell commands</li>
+				<li>System calls (functions provided by the kernel)</li>
+				<li>Library calls (functions within program libraries)</li>
+				<li>Special files (usually found in /dev)</li>
+				<li>File formats and conventions eg /etc/passwd</li>
+				<li>Games</li>
+				<li>Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)</li>
+				<li>System administration commands (usually only for root)</li>
+				<li>Kernel routines [Non standard]</li>
+			</ol>
+		
+       <p>A manual page consists of several sections.</p>
+       <p>Conventional section names include <b>NAME, SYNOPSIS, CONFIGURATION, DESCRIPTION, OPTIONS,  EXIT STATUS,  RETURN VALUE,  ERRORS,  ENVIRONMENT,
+       FILES, VERSIONS, CONFORMING TO, NOTES, BUGS, EXAMPLE, AUTHORS,</b> and <b> SEE ALSO</b>.</p>
+		      
+		</div>
+		<!-- end left hand main content -->
+		
+		<!-- start sidebar -->		
+		<div id="sidebar">
+		
+			<!-- sidebar h3: use <strong> for black text -->
+			<!--h3>Current <strong>clients</strong></h3>
+			<ul class="clientlist">
+				<li><a href="#"><img src="images/client-logo-example.png" alt="Client #1" /></a></li>
+				<li><a href="#"><img src="images/client-logo-example.png" alt="Client #1" /></a></li>
+				<li><a href="#"><img src="images/client-logo-example.png" alt="Client #1" /></a></li>
+			</ul-->
+			<br class="clear" />
+				
+			<h3>Related <strong>links</strong></h3>
+			<ul>
+			  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+			  <li><a href="#">Quisque consequat nunc a felis.</a></li>
+			  <li><a href="#">Suspendisse consequat magna at.</a></li>
+			  <li><a href="#">Etiam eget diam id ligula rhoncus.</a></li>
+			  <li><a href="#">Sed in mauris non nibh.</a></li>
+			</ul>
+				
+
+		</div>
+		<!-- end sidebar -->
+		
+		<div class="clear"></div>
+				
+	</div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="https://rahul10mail.github.io/man.html" data-numposts="5"></div>
+	<!-- start footer -->
+	<hr />
+	<div class="footer1">
+		<p><center>&copy; 2017.</center></p>
+	</div>
+	<!-- end footer -->
+</div>
+</body>
+</html>

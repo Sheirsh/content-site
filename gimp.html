@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>GIMP</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'your-app-id',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="wrap">
+	<div id="header">			
+		<!-- page header - use <span></span> to colour text grey, default color blue -->
+		<h1><a href="#">Into<span>Tech</span></a></h1>
+		
+		<div class="clear"></div>
+	</div>
+
+	<div id="navigation">
+		<div class="inner-navigation">
+			<ul>
+				<!-- top navigation use selected class for selected item -->
+				<li><a href="index.html">home</a></li>
+				<li><a href="linux.html">linux</a></li>
+				<li class="selected"><a href="software.html">software</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div id="content1">
+		<!-- left hand main content -->
+		<div id="page">
+			
+			<h2>GIMP <small>- an image manipulation and paint program.</small></h2>
+			<p>GIMP is the GNU Image Manipulation Program. It  is  used  to  edit  and
+       manipulate  images. It can load and save a variety of image formats and
+       can be used to convert between formats.</p>
+			<p>GIMP can also be used as a paint program. It features a set of  drawing
+       and  painting  tools  such as airbrush, clone, pencil, and paint brush.
+       Painting and drawing tools can be applied to an image with a variety of
+       paint modes.  It also offers an extensive array of selection tools like
+       rectangle, ellipse, fuzzy select, bezier select, intelligent  scissors,
+       and select by color.</p>
+			<p>GIMP  offers  a  variety  of  plug-ins  that perform a variety of image
+       manipulations.  Examples include bumpmap, edge detect,  gaussian  blur,
+       and  many  others.  In  addition,  GIMP has several scripting extension
+       which allow for advanced non-interactive  processing  and  creation  of
+       images.</p>
+       <img src="images/gimp.png" alt="gimp interface ubuntu 16.04" >GIMP in ubuntu 16.04</img>
+			<p>GIMP  ships  with a second binary called gimp-console. This binary is a
+       console-only version and  behaves  as  if  gimp  was  called  with  the
+       --no-interface command-line option.</p>
+       <p>On  platforms  with  the D-Bus message bus system, GIMP will by default
+       check if an instance is already running in this  user  session.  If  it
+       detects  that,  it will pass all filenames given on the command-line to
+       the already running GIMP instance and quit.</p>
+			
+		</div>
+		<!-- end left hand main content -->
+		
+		<!-- start sidebar -->		
+		<div id="sidebar">
+		
+			<!-- sidebar h3: use <strong> for black text -->
+			<!--h3>Current <strong>clients</strong></h3>
+			<ul class="clientlist">
+				<li><a href="#"><img src="images/client-logo-example.png" alt="Client #1" /></a></li>
+				<li><a href="#"><img src="images/client-logo-example.png" alt="Client #1" /></a></li>
+				<li><a href="#"><img src="images/client-logo-example.png" alt="Client #1" /></a></li>
+			</ul-->
+			<br class="clear" />
+				
+			<h3>Related <strong>links</strong></h3>
+			<ul>
+			  <li><a href="man.html">man</a></li>
+			  <li><a href="make.html">make</a></li>
+			</ul>
+				
+
+		</div>
+		<!-- end sidebar -->
+		
+		<div class="clear"></div>
+				
+	</div>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="https://rahul10mail.github.io/gimp.html" data-numposts="5"></div>
+	<!-- start footer -->
+	<hr />
+	<div class="footer1">
+		<p><center>&copy; 2017.</center></p>
+	</div>
+	<!-- end footer -->
+</div>
+</body>
+</html>
